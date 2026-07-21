@@ -21,9 +21,13 @@ Upload files directly to [Catbox.moe](https://catbox.moe/) using the Windows rig
 
 ## Installation
 
-1. Download the repository or the files.
-2. Double-click the **`Install to Context Menu.bat`** file.
-3. The button will be instantly available in Windows!
+**⚠️ Note:** If you just want to use the application, please download the pre-compiled version from the **Releases** page. The Source Code ZIP does not contain the executable and requires manual compilation.
+
+1. Go to the [Releases](../../releases/latest) page.
+2. Download the **`Catbox-Uploader-v1.0.zip`** file under the "Assets" section.
+3. Extract the ZIP file to a permanent folder on your computer.
+4. Double-click the **`Install to Context Menu.bat`** file.
+5. Done! The "Upload to Catbox" button will be instantly available when you right-click any file in Windows!
 
 ## Uninstallation
 
