@@ -5,10 +5,10 @@ echo  Catbox Uploader Installer (Context Menu)
 echo =========================================
 echo.
 
-set "EXE_PATH=%~dp0catbox_uploader.exe"
+set "EXE_PATH=%~dp0CatboxUploader.exe"
 
 if not exist "%EXE_PATH%" (
-    echo ERROR: The file "catbox_uploader.exe" was not found in the current folder.
+    echo ERROR: The file "CatboxUploader.exe" was not found in the current folder.
     echo Make sure this installer is in the same folder as the application.
     echo.
     pause
@@ -22,4 +22,5 @@ reg add "HKCU\Software\Classes\*\shell\UploadCatbox\command" /ve /d "\"%EXE_PATH
 
 echo.
 echo Success! The "Upload to Catbox" button has been added to your right-click menu.
+echo.
 pause

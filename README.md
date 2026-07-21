@@ -32,12 +32,17 @@ Upload files directly to [Catbox.moe](https://catbox.moe/) using the Windows rig
 
 ## For Developers (Compilation)
 
-Requires `requests` and `pyinstaller`.
+This project is a 100% native C# Windows application. It does not require Visual Studio to compile, as the C# compiler is built directly into Windows.
 
-```bash
-pip install requests pyinstaller
-pyinstaller --noconsole --onefile catbox_uploader.py
+To compile it yourself, run the following command in PowerShell:
+```ps1
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /out:CatboxUploader.exe /reference:System.Windows.Forms.dll /reference:System.Net.Http.dll catbox_uploader.cs AssemblyInfo.cs
 ```
+
+## ⚠️ Antivirus False Positives
+Because this is a brand new, unsigned `.exe` that connects to the internet and modifies the clipboard, some strict antivirus engines on VirusTotal might flag it (usually 3-4 obscure vendors). **This is a known false positive.** 
+
+The code is 100% open-source C#. You are encouraged to read `catbox_uploader.cs` to verify that the application only uploads your selected file to the official Catbox.moe API and absolutely nothing else. You can also compile it yourself using the instructions above!
 
 ## Disclaimer / Terms of Use
 
