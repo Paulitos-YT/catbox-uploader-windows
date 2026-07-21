@@ -1,8 +1,6 @@
-# PyInstaller generated folders
-build/
-dist/
-*.spec
+# Executables and releases
+*.exe
+*.zip
 
-# Python cache folders
-__pycache__/
-*.pyc
+# Ignore crash reports
+*.xml
